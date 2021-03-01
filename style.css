@@ -28,7 +28,7 @@ a{
     grid-template-rows: 25.5vh 25.5vh 25.5vh;
     justify-items: center;
     /*align-items: center; i don't know why it doesn't work, i had to put margin-top*/
-    margin-top: 4em;
+    margin-top: 10em;
                     
 }
 
@@ -76,7 +76,6 @@ a{
     width: 19rem;
     height: 15rem;
     padding: 1rem;
-    border-radius: 0 0 0 0.4rem;
     grid-column: 1/1;
     grid-row: 2/3;
     /*position: absolute;
@@ -192,6 +191,7 @@ a{
         width: 22.5rem;
         height: 16rem;
         padding: 1rem;
+        border-radius: 0 0 0 0.4rem;
         grid-column: 1/1;
         grid-row: 2/3;
         margin-right: 22.5rem;
