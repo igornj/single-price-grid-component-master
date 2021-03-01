@@ -54,6 +54,10 @@ h1, h2, h3,{
    line-height: 1.7;
 }
 
+.wrap{
+    width: 50rem;
+}
+
 .middle-content{
     background: hsl(179, 62%, 43%);
     width: 19rem;
@@ -145,30 +149,31 @@ h1, h2, h3,{
         width: 50rem;
         height: 17rem;
         padding: 2rem;
-        position: absolute;
         top: 10%;
         left: 50%;
+        
     }
 
 
     .middle-content{
-        width: 100%;
+        width: 25.3rem;
         height: 15rem;
         padding: 1rem;
-        position: absolute;
         top: 39%;
-        left: 30.7%;
+        left: 38%;
+        transform: translate(-38% -39%)
     
     }
 
 
     .end-content{
-        width: 100%;
+        width: 25.3rem;
         height: 15rem;
         padding: 1rem;
         position: absolute;
         top: 39%;
-        left: 69.4%;
+        left: 62%;
+        transform: translate(-62% -39%)
     }
 
 
