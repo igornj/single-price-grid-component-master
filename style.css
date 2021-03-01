@@ -9,64 +9,80 @@
 
 body{
     background-color: hsl(218, 22%, 90%);
-    width: 375px;
+    width: 100%;
+    height: 100%;
 }
 
 h1, h2, h3,{
     font-weight: 0;
-    font-size: 1.rem;
+    font-size: 1rem;
 }
 
-.wrapper{
-    width: 100%;
-    height: 100%;
+a{
+    text-decoration: none;
+}
+
+.wrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25.5vh 25.5vh 25.5vh;
+    justify-items: center;
+    /*align-items: center; i don't know why it doesn't work, i had to put margin-top*/
+    margin-top: 4em;
+                    
 }
 
 
 .top-content{
     background: white;
     width: 19rem;
-    height: 17rem;
-    padding: 2rem;
+    height: 15rem;
+    padding: 1.5rem;
     border-radius: 0.4rem 0.4rem 0 0;
-    position: absolute;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    /*position: absolute;
     top: 10%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);*/
 
 }
 
 .top-content h1{
     font-size: 1.2rem;
     color: hsl(179, 62%, 43%);
+    margin-left: 0.5rem;
 }
 
 .top-content h2{
     margin-top: 1rem;
+    margin-left: 0.5rem;
     color: hsl(71, 73%, 54%);
     font-size: 1rem;
 }
 
 .top-content p{
    color: hsl(218, 22%, 67%);
-   font-size: 0.9rem;
-   margin-top: 1rem; 
+   font-size: 0.8rem;
+   margin-top: 1rem;
+   margin-left: 0.5rem; 
    line-height: 1.7;
 }
 
-.wrap{
-    width: 50rem;
-}
+
 
 .middle-content{
     background: hsl(179, 62%, 43%);
     width: 19rem;
     height: 15rem;
     padding: 1rem;
-    position: absolute;
+    border-radius: 0 0 0 0.4rem;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    /*position: absolute;
     top: 39%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);*/
 
 }
 
@@ -74,16 +90,18 @@ h1, h2, h3,{
     color: white;
     font-size: 1rem;
     margin-top: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .middle-content h2{
     color: white;
     margin-top: 0.9rem; 
     font-size: 2rem;
+    margin-left: 0.5rem;
 }
 
 .middle-content span{
-    color: hsl(179, 63%, 60%);
+    color:hsl(218, 22%, 87%);
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 1rem;
@@ -91,13 +109,13 @@ h1, h2, h3,{
 }
 
 .middle-content p{
-    color: white;
+    color: hsl(218, 22%, 95%);
     margin-bottom: 1rem;
+    margin-left: 0.5rem;
 }
 
 .button{
     margin-top: 1.5rem;
-    margin-left: 0.1rem;
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -121,10 +139,13 @@ h1, h2, h3,{
     width: 19rem;
     height: 15rem;
     padding: 1rem;
-    position: absolute;
+    border-radius: 0 0 0.4rem;
+    grid-column: 1/1;
+    grid-row: 3/4;
+    /*position: absolute;
     top: 64%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);*/
 }
 
 .end-content h1{
@@ -132,49 +153,108 @@ h1, h2, h3,{
     font-size: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 0.5rem;
 
 }
 
 .end-content p{
-    color: white;
+    color: hsl(218, 22%, 87%);
     font-size: 0.8rem;
     margin-top: 0.5rem;
     line-height: 1;
+    margin-left: 0.5rem;
 }
 
 
 @media (min-width: 550px){
     
-    .top-content{;
-        width: 50rem;
+    .top-content{
+        width: 45rem;
         height: 17rem;
         padding: 2rem;
-        top: 10%;
-        left: 50%;
+        grid-column: 1/1;
+        grid-row: 1/1;
+        /*top: 10%;
+        left: 50%;*/
         
+    }
+
+    .top-content h1{
+        font-size: 1.5rem;
+    }
+
+    .top-content h2{
+        font-size: 1.1rem;
     }
 
 
     .middle-content{
-        width: 25.3rem;
-        height: 15rem;
+        width: 22.5rem;
+        height: 16rem;
         padding: 1rem;
-        top: 39%;
+        grid-column: 1/1;
+        grid-row: 2/3;
+        margin-right: 22.5rem;
+        /*top: 39%;
         left: 38%;
-        transform: translate(-38% -39%)
+        transform: translate(-38% -39%)*/
     
     }
 
+    .middle-content h1{
+        font-size: 1rem;
+        margin-top: 1.5rem;
+        margin-left: 2.1rem;
+    }
+    
+    .middle-content h2{
+        margin-top: 0.9rem; 
+        font-size: 2rem;
+        margin-left: 2rem;
+    }
+    
+    .middle-content span{
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+    
+    .middle-content p{
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    .button{
+        margin-left: 1.9rem;
+        margin-top: 0.5rem;
+        width: 80%;
+    }    
+
 
     .end-content{
-        width: 25.3rem;
-        height: 15rem;
+        width: 22.5rem;
+        height: 16rem;
         padding: 1rem;
-        position: absolute;
-        top: 39%;
+        grid-column: 1/1;
+        grid-row: 2/3;
+        margin-left: 22.5rem;
+        /*top: 39%;
         left: 62%;
-        transform: translate(-62% -39%)
+        transform: translate(-62% -39%)*/
     }
+
+    .end-content h1{;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+    
+    }
+    
+    .end-content p{
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+    }
+    
+         
 
 
 }
