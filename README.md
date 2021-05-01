@@ -1,5 +1,5 @@
 # single-price-grid-component-master
-Challenge from:  https://devchallenge.com.br/challenges
+Challenge from:  https://www.frontendmentor.io/challenges
 
 VERCEL PREVIEW: https://single-price-grid-component-master-m2wicqar4-igornj.vercel.app
 
